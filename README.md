@@ -23,7 +23,7 @@ To get a local copy up and running:
 
 1. Clone this repository or download the zip folder:
 
-**`git clone https://github.com/HtetNaing0814/yummyvalley.git`**
+**`git clone https://github.com/rex-9/yummyvalley.git`**
 
 2. Navigate to the location of the folder in your machine:
 
