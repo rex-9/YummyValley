@@ -1,0 +1,11 @@
+header {
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: var(--medium);
+}
+
+.meals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+}

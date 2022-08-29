@@ -1,0 +1,13 @@
+:root {
+  --light: #FA4F91;
+  --medium: #EC4C8A;
+  --dark: #CF4277;
+  --text: #fff;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+}
