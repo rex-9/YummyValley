@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# YummyValley
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> The amazing YummyValley teaches you various magical methods to create a delicious yummy meal.
+> There are lots of categories starting from breakfast.
+> YummyValley is userfriendly and easy to use website for preparing homemade meals.
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- JavaScript
+- React
+- Redux
+- React Testing Library
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ![yummyvalleys](./src/assets/yummyvalleys.png)
+![Xmissions](./src/assets/Xmissions.png)
+![Xprofiles](./src/assets/Xprofile.png) -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get a local copy up and running:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository or download the zip folder:
 
-### `npm run build`
+**`git clone https://github.com/HtetNaing0814/yummyvalley.git`**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the location of the folder in your machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**`you@your-Pc-name:~$ cd yummyvalley`**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Open the project with VScode:
 
-### `npm run eject`
+**`code .`**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Build the node packages:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**`npm run build`**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Run the server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**`npm start`**
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Here is the online version of [yummyvalley](https://yummyvalley.netlify.app/)
 
-### `npm run build` fails to minify
+## Rex
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 - Github: [@rex-9](https://github.com/rex-9/)<br>
+👤 - Medium: [@rex9](https://medium.com/rex9/)<br>
+👤 - LinkedIn: [@rex9](https://www.linkedin.com/in/rex9/)<br>
+👤 - Facebook: [@htetnaing0814](https://www.facebook.com/htetnaing0814)<br>
+👤 - Angelist: [@rex9](https://angel.co/u/rex9)<br>
+
+## 🤝 Contributions
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check [issue page](https://github.com/HtetNaing0814/yummyvalley/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+[Microverse](https://bit.ly/MicroverseTN)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
