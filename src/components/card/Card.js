@@ -17,8 +17,6 @@ const Card = ({
     i += 3;
   }
 
-  console.log(array);
-
   return (
     <>
       <div className="card" style={array.includes(index) ? { backgroundColor: 'var(--dark)' } : { backgroundColor: 'var(--medium)' }}>
