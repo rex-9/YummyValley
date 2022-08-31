@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import './Meal.css';
+import forward from '../../assets/forward.png';
 
 const Meal = ({
   index, id, name, photo,
@@ -19,7 +20,8 @@ const Meal = ({
   return (
     <>
       <div className="card" style={array.includes(index) ? { backgroundColor: 'var(--dark)' } : { backgroundColor: 'var(--medium)' }}>
-        <img src={photo} alt={name} />
+        <img className="thumb" src={photo} alt={name} />
+        <img className="forward" src={forward} alt="Forward" />
         <div>
           <div>{name}</div>
           <div>{id}</div>

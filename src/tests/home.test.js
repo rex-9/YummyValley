@@ -4,9 +4,7 @@ import {
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
 import Home from '../pages/home/Home';
-import Detail from '../pages/detail/Detail';
 import { filterMeals } from '../redux/meals';
-import { detailMeal } from '../redux/meal';
 
 describe('Home page component', () => {
   afterEach(() => {
@@ -21,20 +19,5 @@ describe('Home page component', () => {
     expect(screen.getByText('Seafood')).toMatchSnapshot(); // Nav component
     expect(screen.getByText('Breakfast')).toMatchSnapshot(); // Highlight component
     expect(screen.findAllByText(/WONTONS/i)).toMatchSnapshot();
-  });
-
-  // afterEach(() => {
-  //   act(() => store.dispatch(detailMeal('52885')));
-  // });
-  it('Check if contents of Detail available', async () => {
-    render(
-      <Provider store={store}>
-        <Detail />
-      </Provider>,
-    );
-    expect(screen.getByText('How to prepare')).toMatchSnapshot(); // Name of the Detail component
-    expect(screen.getByText('id')).toMatchSnapshot(); // id of the Detail component
-    const meal = screen.findAllByText(/instructions:/i); // Instructions of the meals
-    expect(meal).toMatchSnapshot();
   });
 });
