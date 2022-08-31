@@ -67,6 +67,8 @@ Give a ⭐️ if you like this project!
 
 [Microverse](https://bit.ly/MicroverseTN)
 
+Original design idea by - [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
