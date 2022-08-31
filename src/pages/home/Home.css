@@ -4,7 +4,23 @@ header {
   background-color: var(--medium);
 }
 
-.meals {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media (max-width: 500px) and (min-width: 300px) {
+  .meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

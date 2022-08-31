@@ -2,7 +2,10 @@ h2 {
   text-align: center;
 }
 
-.categories {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media (min-width: 500px) {
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
