@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Meals.css';
 import Meal from '../meal/Meal';
-import { filterMeals } from '../../redux/meal';
+import { filterMeals } from '../../redux/meals';
 
 const Meals = () => {
   const meals = useSelector((state) => state.meals);

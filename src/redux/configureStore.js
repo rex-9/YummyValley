@@ -3,10 +3,12 @@ import { logger } from 'redux-logger';
 import thunk from 'redux-thunk';
 
 import mealXer from './meal';
+import mealsXer from './meals';
 
 const store = configureStore({
   reducer: {
-    meals: mealXer,
+    meals: mealsXer,
+    meal: mealXer,
   },
   middleware: [logger, thunk],
 });

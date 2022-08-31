@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './Nav.css';
 import backArrow from '../../assets/back.png';
 import mic from '../../assets/mic.png';
@@ -8,7 +9,7 @@ const Nav = ({ navContent, back }) => (
   <>
     <nav>
       {
-        back ? <img src={backArrow} alt="" /> : <div />
+        back ? <Link to="/"><img src={backArrow} alt="back arrow" /></Link> : <div />
       }
       <div>{navContent}</div>
       <div className="icons">

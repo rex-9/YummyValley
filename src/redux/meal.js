@@ -5,43 +5,19 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import API from '../api';
 
-const FILTER_MEALS = 'yummyvalley/meal/FILTER_MEALS';
 const DETAIL_MEAL = 'yummyvalley/meal/DETAIL_MEAL';
 
 const initialState = [];
 
 const mealXer = (state = initialState, action) => {
-  let foundMeal = {};
-  let foundIndex = 0;
   switch (action.type) {
-    case `${FILTER_MEALS}/fulfilled`:
-      return [...action.payload];
-
     case `${DETAIL_MEAL}/fulfilled`:
-      foundMeal = state.find((m) => m.id === action.payload.id);
-      foundMeal.detail = action.payload;
-      console.log(foundMeal);
-      foundIndex = state.findIndex((x) => x.id === action.payload.id);
-      console.log(foundIndex);
-      state[foundIndex] = foundMeal;
-      console.log([...state]);
-      return [...state];
+      return action.payload;
 
     default:
       return state;
   }
 };
-
-const filterMeals = createAsyncThunk(FILTER_MEALS, async (cateName) => {
-  const response = await fetch(API.filter(cateName));
-  const data = await response.json();
-  const meals = data.meals.map((meal) => ({
-    name: meal.strMeal,
-    photo: meal.strMealThumb,
-    id: meal.idMeal,
-  }));
-  return meals;
-});
 
 // const generateArray = (mealDetail, strProp) => {
 //   const props = [];
@@ -77,4 +53,4 @@ const detailMeal = createAsyncThunk(DETAIL_MEAL, async (id) => {
 });
 
 export default mealXer;
-export { filterMeals, detailMeal };
+export { detailMeal };
