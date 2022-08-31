@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import './Highlight.css';
 
-const Highlight = ({ img, name, flavour }) => (
+const Highlight = ({ thumb, name, id }) => (
   <>
     <div className="box">
-      <img src={img} alt={name} />
+      <img src={thumb} alt={name} />
       <div className="heading">
         <h1>{name}</h1>
         <h3>
-          {flavour}
+          {id}
           {' '}
           flavours
         </h3>
@@ -18,9 +18,9 @@ const Highlight = ({ img, name, flavour }) => (
 );
 
 Highlight.propTypes = {
-  img: PropTypes.string.isRequired,
+  thumb: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  flavour: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Highlight;

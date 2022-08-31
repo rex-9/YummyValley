@@ -5,11 +5,11 @@ import backArrow from '../../assets/back.png';
 import mic from '../../assets/mic.png';
 import setting from '../../assets/setting.png';
 
-const Nav = ({ navContent, back }) => (
+const Nav = ({ navContent, back, route }) => (
   <>
     <nav>
       {
-        back ? <Link to="/"><img src={backArrow} alt="back arrow" /></Link> : <div />
+        back ? <Link to={route}><img src={backArrow} alt="back arrow" /></Link> : <div />
       }
       <div>{navContent}</div>
       <div className="icons">
@@ -23,6 +23,7 @@ const Nav = ({ navContent, back }) => (
 Nav.propTypes = {
   navContent: PropTypes.string.isRequired,
   back: PropTypes.bool.isRequired,
+  route: PropTypes.string.isRequired,
 };
 
 export default Nav;

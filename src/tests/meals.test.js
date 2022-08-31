@@ -18,6 +18,6 @@ describe('Home page component', () => {
     );
     expect(screen.getByText('Seafood')).toMatchSnapshot(); // Nav component
     expect(screen.getByText('Breakfast')).toMatchSnapshot(); // Highlight component
-    expect(screen.findAllByText(/WONTONS/i)).toMatchSnapshot();
+    expect(screen.findAllByText(/WONTONS/i)).toMatchSnapshot(); // Meals
   });
 });

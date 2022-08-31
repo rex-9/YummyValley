@@ -20,8 +20,8 @@ const Detail = () => {
 
   return (
     <>
-      <Nav navContent={meal.name} back />
-      <Highlight img={meal.photo} name={meal.name} flavour={meal.id} />
+      <Nav navContent={meal.name} back route="/" />
+      <Highlight thumb={meal.photo} name={meal.name} id={meal.id} />
       <div className="detail">
         <header>
           How to prepare

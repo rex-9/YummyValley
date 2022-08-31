@@ -20,7 +20,7 @@ const filterMeals = createAsyncThunk(FILTER_MEALS, async (cateName) => {
   const data = await response.json();
   const meals = data.meals.map((meal) => ({
     name: meal.strMeal,
-    photo: meal.strMealThumb,
+    thumb: meal.strMealThumb,
     id: meal.idMeal,
   }));
   return meals;

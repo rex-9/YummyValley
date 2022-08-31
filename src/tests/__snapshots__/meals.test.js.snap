@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page component Check if contents of home available 1`] = `
+<div>
+  Seafood
+</div>
+`;
+
+exports[`Home page component Check if contents of home available 2`] = `
+<h1>
+  Breakfast
+</h1>
+`;
+
+exports[`Home page component Check if contents of home available 3`] = `Promise {}`;

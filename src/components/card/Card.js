@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import './Meal.css';
+import './Card.css';
 import forward from '../../assets/forward.png';
 
-const Meal = ({
-  index, id, name, photo,
+const Card = ({
+  index, id, name, thumb,
 }) => {
   const [array] = useState([]);
 
@@ -20,7 +20,7 @@ const Meal = ({
   return (
     <>
       <div className="card" style={array.includes(index) ? { backgroundColor: 'var(--dark)' } : { backgroundColor: 'var(--medium)' }}>
-        <img className="thumb" src={photo} alt={name} />
+        <img className="thumb" src={thumb} alt={name} />
         <img className="forward" src={forward} alt="Forward" />
         <div>
           <div>{name}</div>
@@ -31,11 +31,11 @@ const Meal = ({
   );
 };
 
-Meal.propTypes = {
+Card.propTypes = {
   index: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
+  thumb: PropTypes.string.isRequired,
 };
 
-export default Meal;
+export default Card;
