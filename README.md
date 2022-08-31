@@ -13,9 +13,9 @@
 
 ## Screenshots
 
-<!-- ![yummyvalleys](./src/assets/yummyvalleys.png)
-![Xmissions](./src/assets/Xmissions.png)
-![Xprofiles](./src/assets/Xprofile.png) -->
+![Yummy Valley](./src/assets/YummyValley.png)
+![Seafood](./src/assets/YV-Seafood.png)
+![Fish Pie](./src/assets/YV-FishPie.png)
 
 ## Getting Started
 
