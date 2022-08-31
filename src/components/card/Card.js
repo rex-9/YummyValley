@@ -10,12 +10,14 @@ const Card = ({
 
   for (let i = 1; i < 100; i += 1) {
     array.push(i);
-    i += 4;
+    i += 3;
   }
   for (let i = 2; i < 100; i += 1) {
     array.push(i);
-    i += 4;
+    i += 3;
   }
+
+  console.log(array);
 
   return (
     <>
