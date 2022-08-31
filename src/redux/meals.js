@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import API from '../api';
 
-const FILTER_MEALS = 'yummyvalley/meal/FILTER_MEALS';
+const FILTER_MEALS = 'yummyvalley/meals/FILTER_MEALS';
 
 const initialState = [];
 

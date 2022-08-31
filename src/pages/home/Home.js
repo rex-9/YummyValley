@@ -5,7 +5,7 @@ import Meals from '../../components/meals/Meals';
 const category = {
   img: 'https://www.themealdb.com/images/category/breakfast.png',
   name: 'Breakfast',
-  flavour: 1000,
+  flavour: '1000',
 };
 
 const Home = () => (
