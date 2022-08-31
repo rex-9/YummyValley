@@ -1,13 +1,16 @@
+import PropTypes from 'prop-types';
 import './Nav.css';
-import back from '../../assets/back.png';
+import backArrow from '../../assets/back.png';
 import mic from '../../assets/mic.png';
 import setting from '../../assets/setting.png';
 
-const Nav = () => (
+const Nav = ({ navContent, back }) => (
   <>
     <nav>
-      <img src={back} alt="" />
-      <div>Nav</div>
+      {
+        back ? <img src={backArrow} alt="" /> : <div />
+      }
+      <div>{navContent}</div>
       <div className="icons">
         <img src={mic} alt="" />
         <img src={setting} alt="" />
@@ -15,5 +18,10 @@ const Nav = () => (
     </nav>
   </>
 );
+
+Nav.propTypes = {
+  navContent: PropTypes.string.isRequired,
+  back: PropTypes.bool.isRequired,
+};
 
 export default Nav;

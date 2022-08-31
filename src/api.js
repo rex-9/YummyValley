@@ -1,10 +1,10 @@
 class API {
-  baseUrl = 'www.themealdb.com/api/json/v1/1/';
+  baseUrl = 'https://www.themealdb.com/api/json/v1/1';
 
   categoriesEndPoint = `${this.baseUrl}/categories.php`;
 
-  filter(para) {
-    return `${this.baseUrl}/filter.php?c=${para}`;
+  filter(cateName) {
+    return `${this.baseUrl}/filter.php?c=${cateName}`;
   }
 
   detail(id) {
