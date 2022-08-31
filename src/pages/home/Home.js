@@ -10,9 +10,11 @@ const category = {
 
 const Home = () => (
   <>
-    <Nav navContent="Seafood" back={false} />
-    <Highlight img={category.img} name={category.name} flavour={category.flavour} />
-    <Meals />
+    <div className="home">
+      <Nav navContent="Seafood" back={false} />
+      <Highlight img={category.img} name={category.name} flavour={category.flavour} />
+      <Meals />
+    </div>
   </>
 );
 

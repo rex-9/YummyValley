@@ -18,8 +18,6 @@ const Detail = () => {
     }
   }, []);
 
-  console.log(meal);
-
   return (
     <>
       <Nav navContent={meal.name} back />
@@ -28,18 +26,21 @@ const Detail = () => {
         <header>
           How to prepare
         </header>
-        <div>{ id }</div>
+        <div>
+          id:
+          { meal.id }
+        </div>
         <div>
           style:
           { meal.style }
+        </div>
+        <div>
+          Category:
+          { meal.category }
         </div>
         <div>
           Instructions:
           { meal.instructions }
-        </div>
-        <div>
-          style:
-          { meal.style }
         </div>
       </div>
     </>
