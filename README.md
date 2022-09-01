@@ -11,6 +11,10 @@
 - Redux
 - React Testing Library
 
+## Demo
+
+[Yummy Valley Video Presentation](https://www.loom.com/share/cfba817662ab412ab3f2dd66fdd1d6e5)
+
 ## Screenshots
 
 ![Yummy Valley](./src/assets/YummyValley.png)
