@@ -13,8 +13,8 @@ const Nav = ({ navContent, back, route }) => (
       }
       <div>{navContent}</div>
       <div className="icons">
-        <img src={mic} alt="" />
-        <img src={setting} alt="" />
+        <img src={mic} alt="mic" />
+        <img src={setting} alt="setting" />
       </div>
     </nav>
   </>

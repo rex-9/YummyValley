@@ -1,23 +1,34 @@
 import {
-  render, screen, act,
+  render, screen,
 } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
-import Home from '../pages/home/Home';
-import { filterMeals } from '../redux/meals';
+import Categories from '../pages/categories/Categories';
+import Nav from '../components/nav/Nav';
 
-describe('Home page component', () => {
-  afterEach(() => {
-    act(() => store.dispatch(filterMeals('Pork')));
-  });
-  it('Check if contents of home available', async () => {
+describe('Categories page component', () => {
+  it('Check if Categories page available', async () => {
     render(
       <Provider store={store}>
-        <Home />
+        <Categories />
       </Provider>,
     );
-    expect(screen.getByText('Seafood')).toMatchSnapshot(); // Nav component
-    expect(screen.getByText('Breakfast')).toMatchSnapshot(); // Highlight component
-    expect(screen.findAllByText(/WONTONS/i)).toMatchSnapshot(); // Meals
+    expect(screen.getByText('😋 Yummy Valley ✨')).toMatchSnapshot(); // Categories Page
+  });
+  it('Check if Meals page available', async () => {
+    render(
+      <Provider store={store}>
+        <Nav />
+      </Provider>,
+    );
+    expect(screen.getByAltText(/mic/i)).toMatchSnapshot(); // Meals Page
+  });
+  it('Check if Detail page available', async () => {
+    render(
+      <Provider store={store}>
+        <Nav />
+      </Provider>,
+    );
+    expect(screen.getByAltText(/setting/i)).toMatchSnapshot(); // Details Page
   });
 });

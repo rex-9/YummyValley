@@ -5,9 +5,9 @@ import Highlight from '../../components/highlight/Highlight';
 import Nav from '../../components/nav/Nav';
 import Card from '../../components/card/Card';
 import { filterMeals } from '../../redux/meals';
-import './Home.css';
+import './Meals.css';
 
-const Home = () => {
+const Meals = () => {
   const { name } = useParams();
   const meals = useSelector((state) => state.meals);
   const categories = useSelector((state) => state.categories);
@@ -19,18 +19,14 @@ const Home = () => {
 
   return (
     <>
-      <div className="home">
-        <Nav navContent={name} back route="/" />
-        <Highlight thumb={category.thumb} name={category.name} id={category.id} />
-        <div className="meals">
-          {
-          meals.map((meal, index) => <Link key={meal.id} to={`/${name}/${meal.id}`}><Card index={index} id={meal.id} name={meal.name} thumb={meal.thumb} /></Link>)
-          }
-        </div>
-        {' '}
-
+      <Nav navContent={name} back route="/" />
+      <Highlight thumb={category.thumb} name={category.name} id={category.id} />
+      <div className="meals">
+        {
+        meals.map((meal, index) => <Link key={meal.id} to={`/${name}/${meal.id}`}><Card index={index} id={meal.id} name={meal.name} thumb={meal.thumb} /></Link>)
+        }
       </div>
     </>
   );
 };
-export default Home;
+export default Meals;
