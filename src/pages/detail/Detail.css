@@ -1,0 +1,13 @@
+.detail header {
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: var(--medium);
+}
+
+.detail div {
+  padding: 10px 20px;
+}
+
+.detail div:nth-child(2n+1) {
+  background-color: #ce4176;
+}

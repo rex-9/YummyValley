@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories page component Check if Categories page available 1`] = `
+<h2>
+  😋 Yummy Valley ✨
+</h2>
+`;
+
+exports[`Categories page component Check if Detail page available 1`] = `
+<img
+  alt="setting"
+  src="setting.png"
+/>
+`;
+
+exports[`Categories page component Check if Meals page available 1`] = `
+<img
+  alt="mic"
+  src="mic.png"
+/>
+`;
