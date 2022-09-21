@@ -4,17 +4,21 @@ import './Card.css';
 import forward from '../../assets/forward.png';
 
 const Card = ({
-  index, id, name, thumb,
+  type, index, id, name, thumb,
 }) => {
-  const [array] = useState([]);
+  let [array] = useState([]);
 
-  for (let i = 1; i < 100; i += 1) {
-    array.push(i);
-    i += 3;
-  }
-  for (let i = 2; i < 100; i += 1) {
-    array.push(i);
-    i += 3;
+  if (type === 'categories') {
+    for (let i = 1; i < 100; i += 1) {
+      array.push(i);
+      i += 3;
+    }
+    for (let i = 2; i < 100; i += 1) {
+      array.push(i);
+      i += 3;
+    }
+  } else {
+    array = [...Array(100).keys()].filter((n) => n % 2);
   }
 
   return (
@@ -32,6 +36,7 @@ const Card = ({
 };
 
 Card.propTypes = {
+  type: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
