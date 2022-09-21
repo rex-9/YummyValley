@@ -20,10 +20,10 @@ const Meals = () => {
   return (
     <>
       <Nav navContent={name} back route="/" />
-      <Highlight thumb={category.thumb} name={category.name} id={category.id} />
+      <Highlight thumb={category.thumb} name={category.name} total={meals.length} />
       <div className="meals">
         {
-        meals.map((meal, index) => <Link key={meal.id} to={`/${name}/${meal.id}`}><Card type="meals" index={index} id={meal.id} name={meal.name} thumb={meal.thumb} /></Link>)
+        meals.map((meal, index) => <Link key={meal.id} to={`/${name}/${meal.id}`}><Card type="meals" index={index} name={meal.name} thumb={meal.thumb} /></Link>)
         }
       </div>
     </>

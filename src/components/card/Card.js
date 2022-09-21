@@ -4,7 +4,7 @@ import './Card.css';
 import forward from '../../assets/forward.png';
 
 const Card = ({
-  type, index, id, name, thumb,
+  type, index, name, thumb,
 }) => {
   let [array] = useState([]);
 
@@ -26,10 +26,7 @@ const Card = ({
       <div className="card" style={array.includes(index) ? { backgroundColor: 'var(--dark)' } : { backgroundColor: 'var(--medium)' }}>
         <img className="thumb" src={thumb} alt={name} />
         <img className="forward" src={forward} alt="Forward" />
-        <div>
-          <div>{name}</div>
-          <div>{id}</div>
-        </div>
+        <div>{name}</div>
       </div>
     </>
   );
@@ -38,7 +35,6 @@ const Card = ({
 Card.propTypes = {
   type: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
-  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   thumb: PropTypes.string.isRequired,
 };
