@@ -23,7 +23,7 @@ const Meals = () => {
       <Highlight thumb={category.thumb} name={category.name} id={category.id} />
       <div className="meals">
         {
-        meals.map((meal, index) => <Link key={meal.id} to={`/${name}/${meal.id}`}><Card index={index} id={meal.id} name={meal.name} thumb={meal.thumb} /></Link>)
+        meals.map((meal, index) => <Link key={meal.id} to={`/${name}/${meal.id}`}><Card type="meals" index={index} id={meal.id} name={meal.name} thumb={meal.thumb} /></Link>)
         }
       </div>
     </>

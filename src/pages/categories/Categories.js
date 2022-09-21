@@ -20,7 +20,7 @@ const Categories = () => {
       <h2>😋 Yummy Valley ✨</h2>
       <div className="categories">
         {
-          categories.map((meal, index) => <Link key={meal.id} to={`/${meal.name}`}><Card index={index} id={meal.id} name={meal.name} thumb={meal.thumb} /></Link>)
+          categories.map((meal, index) => <Link key={meal.id} to={`/${meal.name}`}><Card type="categories" index={index} id={meal.id} name={meal.name} thumb={meal.thumb} /></Link>)
         }
       </div>
     </>
